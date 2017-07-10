@@ -26,7 +26,7 @@ class Customer
   end
 
   def self.all_names
-    self.all.map {|customer| "#{customer.first_name} #{customer.last_name}"}
+    self.all.map {|customer| customer.full_name}
   end
 
   def add_review(restaurant, content)
